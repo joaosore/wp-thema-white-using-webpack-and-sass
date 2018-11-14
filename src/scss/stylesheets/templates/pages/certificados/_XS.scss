@@ -1,0 +1,31 @@
+@media only screen and (max-width: $XS)
+{
+	.certificados {
+		.box-certificados {
+		    .box-block {
+				.box {
+					.content {
+						.certificado {
+							width: 100px;
+						}
+						.titulo {
+							font-size: 1.2em;
+						    text-align: center;
+						}
+						.logo {
+							height: 35px;
+						}
+					}
+				}
+			}
+		}
+	}
+	@media (orientation: landscape)
+	{
+
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

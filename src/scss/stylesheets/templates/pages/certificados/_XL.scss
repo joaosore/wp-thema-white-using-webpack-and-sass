@@ -1,0 +1,56 @@
+.certificados {
+	background-color: #0B77BC;
+	.box-certificados {
+        padding: 50px 15px;
+	    .box-block {
+    	    padding: 15px;
+			.box {
+				cursor: pointer;
+				float: left;
+				width: 100%;
+				position: relative;
+				&:before {
+					content: "";
+					display: block;
+					padding-top: 100%;
+				}
+				.content {
+					bottom: 0;
+					left: 0;
+					position: absolute;
+					right: 0;
+					top: 0;
+					background-color: #FFF;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					flex-direction: column;
+					&:before {
+						content: ' ';
+						display: block;
+						height: 100%;
+						width: 100%;
+						position: absolute;
+						z-index: 1;
+					    pointer-events: none;
+					}
+					img {
+						&.certificado {
+							width: 75px;
+						}
+						&.logo {
+							height: 25px;
+							margin-bottom: 15px;
+						}
+					}
+					.titulo {
+						font-weight: 500;
+						color: #959595;
+						font-size: .8em;
+						padding: 15px 0;
+					}
+				}
+			}
+		}
+	}
+}

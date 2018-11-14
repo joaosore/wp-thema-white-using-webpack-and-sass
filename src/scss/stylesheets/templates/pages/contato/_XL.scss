@@ -1,0 +1,249 @@
+.contato {
+	height: calc(100vh - 50px);
+	position: relative;
+	display: flex;
+	align-items: center;
+	background-color: #FFFFFF;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#41acf0+1,0b77bc+55,0263a0+100 */
+	background: #41acf0; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #41acf0 1%, #0b77bc 55%, #0263a0 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #41acf0 1%,#0b77bc 55%,#0263a0 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #41acf0 1%,#0b77bc 55%,#0263a0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41acf0', endColorstr='#0263a0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	@media only screen and (max-height: 800px) {
+		height: 800px;
+	}
+	h2 {
+		font-weight: 800;
+		text-transform: uppercase;
+		color: #0E447D;
+		text-align: center;
+	}
+	p {
+		color: #FFF;
+	    font-size: 1.875em;
+	    a {
+	    	color: #FFF;
+	    }
+	}
+	form {
+		.box-input {
+			background: rgb(255,255,255);
+			background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 100%);
+			background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(240,240,240,1) 100%);
+			background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(240,240,240,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0f0f0',GradientType=0 );
+			height: 59px;
+			width: 100%;
+			border-radius: 9px;
+			border: 1px solid #E6E6E6;
+		    position: relative;
+	        margin-bottom: 15px;
+	        &.textarea {
+	        	height: 118px;
+	        }
+			.placeholder {
+				position: absolute;
+				left: 50px;
+				top: calc(50% - 12px);
+				font-size: 1.125em;
+				font-weight: 400;
+				color: #959595;
+				pointer-events: none;
+			    transition: all 350ms ease-out;
+			    &.textarea {
+			    	top: calc(25% - 12px);
+			    	&.active {
+		    		    top: calc(12.5% - 11.5px);
+			    	}
+			    }
+				&.active {
+					left: 50px;
+					top: calc(25% - 11.5px);
+					font-size: .8em;
+				}
+			}
+			select {
+				opacity: 0;
+			}
+			input {
+				background: transparent;
+				border: 0;
+				width: 100%;
+				height: 100%;
+			    padding: 0 50px;
+			    font-size: 1.125em;
+				font-weight: 400;
+				color: #959595;
+				transition: all 350ms ease-out;
+				position: relative;
+				&.active {
+					height: 50%;
+					top: 36%;
+				}
+			}
+			textarea {
+				background: transparent;
+				border: 0;
+				width: 100%;
+				height: 100%;
+			    padding: 0 50px;
+			    font-size: 1.125em;
+				font-weight: 400;
+				color: #959595;
+				transition: all 350ms ease-out;
+				position: relative;
+				resize: none;
+				&.active {
+					height: 80%;
+					top: 20%;
+				}
+			}
+			.custom-select-container {
+				height: 100%;
+				.custom-select-opener {
+					background-color: transparent;
+					padding: 0 50px;
+					position: relative;
+					display: flex;
+					align-items: center;
+					height: 50%;
+					top: 36%;
+					font-size: 1.125em;
+					font-weight: 400;
+					color: #959595;
+				}
+				.custom-select-panel {
+					background: rgb(255,255,255);
+					background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 100%);
+					background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(240,240,240,1) 100%);
+					background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(240,240,240,1) 100%);
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0f0f0',GradientType=0 );
+				    border-radius: 8px;
+					.custom-select-option {
+						padding: 15px 50px;
+						min-height: 54px;
+					}
+				}
+			}
+			label {
+				&.error {
+					position: absolute;
+					left: 50px;
+					bottom: 0;
+					margin: 0;
+					font-size: .7em;
+					color: red;
+				}
+			}
+		}
+	}
+	.mensagem {
+		height: 510px;
+		align-items: center;
+		justify-content: center;
+		display: none;
+	    flex-direction: column;
+		transition: all 350ms ease-out;
+		&.active {
+			display: flex;
+		}
+		h3 {
+			color: #FFF;
+			font-weight: 500;
+		}
+	}
+	.dados {
+		&.box {
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			.item {
+				p {
+					color: #FFF;
+					font-size: 1.125em;
+				    font-weight: 500;
+			        padding-left: 100px;
+				    strong {
+			    	    font-weight: 800;
+				    }
+				}
+				.telefone {
+				    position: relative;
+					&:before {
+						content: " ";
+						display: block;
+						background-color: #0E447D;
+						position: absolute;
+						height: 25px;
+						width: 25px;
+						background-repeat: no-repeat;
+						-webkit-mask-repeat: no-repeat;
+						-webkit-mask-position: center;
+						background-size: 15px;
+						left: 60px;
+					    top: calc(50% - 12.5px);
+						-webkit-mask-image: url(/wp-content/themes/equiplex/imgs/Icon_Telefone.svg);
+						mask-image: url(/wp-content/themes/equiplex/imgs/Icon_Telefone.svg);
+						background-position: center;
+						transition: all 350ms ease-out;
+					}
+					p {
+						font-size: 1.875em;
+					    font-weight: 300;
+					}
+				}
+				.email {
+				    position: relative;
+					&:before {
+						content: " ";
+						display: block;
+						background-color: #0E447D;
+						position: absolute;
+						height: 25px;
+						width: 25px;
+						background-repeat: no-repeat;
+						-webkit-mask-repeat: no-repeat;
+						-webkit-mask-position: center;
+						background-size: 15px;
+						left: 60px;
+					    top: calc(50% - 12.5px);
+						-webkit-mask-image: url(/wp-content/themes/equiplex/imgs/Icon_Contato.svg);
+						mask-image: url(/wp-content/themes/equiplex/imgs/Icon_Contato.svg);
+						background-position: center;
+						transition: all 350ms ease-out;
+					}
+				}
+				.endereco {
+				    position: relative;
+					&:before {
+						content: " ";
+						display: block;
+						background-color: #0E447D;
+						position: absolute;
+						height: 25px;
+						width: 25px;
+						background-repeat: no-repeat;
+						-webkit-mask-repeat: no-repeat;
+						-webkit-mask-position: center;
+						background-size: 15px;
+						left: 60px;
+					    top: calc(50% - 12.5px);
+						-webkit-mask-image: url(/wp-content/themes/equiplex/imgs/Icon_GPS.svg);
+						mask-image: url(/wp-content/themes/equiplex/imgs/Icon_GPS.svg);
+						background-position: center;
+						transition: all 350ms ease-out;
+					}
+				}
+			}
+		}
+	}
+}
+.grecaptcha-badge {
+	transform: translateX(100%);
+	transition: all 0.3s ease 0s;
+	&.active {
+		transform: translateX(0%);
+	}
+}

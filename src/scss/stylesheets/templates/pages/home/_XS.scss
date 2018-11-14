@@ -1,0 +1,22 @@
+@media only screen and (max-width: $XS)
+{
+	.inicial {
+		.box-img {
+			img {
+			    margin-top: 0;
+			}
+		}
+		.block-mobile {
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+	}
+	@media (orientation: landscape)
+	{
+
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

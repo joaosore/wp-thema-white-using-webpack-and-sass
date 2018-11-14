@@ -1,0 +1,15 @@
+.lider-mundial {
+	min-height: 322px;
+	display: flex;
+	align-items: center;
+	.titulo {
+	    text-align: right;
+	}
+    strong {
+	    font-weight: 800;
+    }
+    .descricao {
+	    text-align: left;
+	    width: 80%;
+	}
+}

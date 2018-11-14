@@ -1,0 +1,64 @@
+@media only screen and (max-width: $SM)
+{
+	footer {
+		.box {
+		    padding: 100px 60px;
+		}
+
+		.box-redes {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 25px;
+		}
+
+		.box-btn {
+			.box-btn-voltar {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 50%;
+				.btn-voltar-top {
+				    &:hover {
+				    	&:before {
+				    	}
+				    }
+				    &:before {
+					}
+				}
+			}
+		}
+
+		.line {
+	        width: 25%;
+			height: 1px;
+			background-color: #FFF;
+			position: relative;
+			&.full {
+				width: 100%;
+				margin-top: 33.5px;
+				margin-bottom: 33.5px;
+			}
+		}
+
+		.box-copy {
+			p {
+				margin: 0;
+				text-align: center;
+				font-size: .8em;
+			}
+		}
+
+		.copyright {
+		    order: 2;
+		}
+	}
+	@media (orientation: landscape)
+	{
+
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

@@ -1,0 +1,49 @@
+@media only screen and (max-width: $LG)
+{
+	.produtos {
+		.box-name-produto {
+			.box-conteudo-redes {
+		    	width: 80%;
+			}
+		}
+		.box-protudo {
+			.btn-produto-redes,
+			.btn-produto-cordas {
+				.box {
+					padding: 0 15px;
+				}
+			}
+			.box-show-detalhes {
+		        .box-redes,
+		        .box-cordas {
+		        	.box-img {
+				    	height: 200px;
+						img {
+					    	height: 200px;
+						}
+		        	}
+		        }
+		        .paleta,
+		        .paleta-mobile  {
+        		    width: 85%;
+		        	.box-paleta {
+		        		.btn-paleta {
+							margin-bottom: 0px;
+							padding: 30px 0px;
+		        		}
+		        	}
+		        }
+			}
+		}
+	}
+
+
+	@media (orientation: landscape)
+	{
+
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

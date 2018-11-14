@@ -1,0 +1,28 @@
+@media only screen and (max-width: $LG)
+{
+	.inicial {
+		min-height: 100vh;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		.box-img {
+			position: absolute;
+			img {
+				object-fit: cover;
+				height: 100%;
+			}
+		}
+	}
+	@media (orientation: landscape)
+	{
+		.inicial {
+			@media only screen and (max-height: $MD) {
+				min-height: 991px;
+			}
+		}
+	}
+	@media (orientation: portrait)
+	{
+
+	}
+}

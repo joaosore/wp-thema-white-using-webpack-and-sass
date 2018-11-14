@@ -1,0 +1,171 @@
+
+// Components Styles like Carousel, etc..
+.owl-carousel {
+	&.owl-carousel-paletas,
+	&.carousel-aplicacoes-thumb {
+		.owl-nav {
+			position: absolute;
+			top: calc(50% - 28.5px);
+			width: 100%;
+			padding-right: 15px;
+			padding-left: 15px;
+			.owl-prev {
+				background-image: url('/wp-content/themes/equiplex/imgs/owl-seta.png');
+				width: 52px;
+				height: 52px;
+			    transform: rotateY(180deg);
+				outline: none;
+			    &:hover {
+			    	transform: rotateY(180deg) rotateX(180deg);
+			    }
+			    &.disabled {
+			    	background-image: url('/wp-content/themes/equiplex/imgs/owl-seta-disable.png');
+			    }
+			}
+			.owl-next {
+				background-image: url('/wp-content/themes/equiplex/imgs/owl-seta.png');
+				width: 52px;
+				height: 52px;
+				outline: none;
+			    float: right;
+			    &:hover {
+			    	transform: rotateX(180deg);
+			    }
+			    &.disabled {
+			    	background-image: url('/wp-content/themes/equiplex/imgs/owl-seta-disable.png');
+			    }
+			}
+		}
+		.owl-dots {
+		    margin-top: 15px;
+	        text-align: center;
+			.owl-dot {
+				width: 10px;
+				height: 10px;
+				background-color: #959595;
+				margin: 5px;
+				border-radius: 15px;
+				&.active {
+					background-color: #0B77BC;
+				}
+			}
+		}
+	}
+	&.carousel-aplicacoes-thumb {
+		.owl-nav {
+			padding: 0;
+		}
+	}
+}
+
+.profile-main-loader {
+	height: 50px;
+	width: 50px;
+	display: none;
+	.loader {
+		position: relative;
+		margin: 0px auto;
+		width: 100%;
+		height: 100%;
+		&:before {
+			content: '';
+			display: block;
+			padding-top: 100%;
+		}
+		.circular-loader {
+			-webkit-animation: rotate 2s linear infinite;
+			animation: rotate 2s linear infinite;
+			height: 100%;
+			-webkit-transform-origin: center center;
+			-ms-transform-origin: center center;
+			transform-origin: center center;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin: auto;
+			.loader-path {
+				stroke-dasharray: 150,200;
+				stroke-dashoffset: -10;
+				-webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+				animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+				stroke-linecap: round;
+			}
+		}
+	}
+}
+
+
+@-webkit-keyframes rotate {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes rotate {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes dash {
+	0% {
+		stroke-dasharray: 1,200;
+		stroke-dashoffset: 0;
+	}
+	50% {
+		stroke-dasharray: 89,200;
+		stroke-dashoffset: -35;
+	}
+	100% {
+		stroke-dasharray: 89,200;
+		stroke-dashoffset: -124;
+	}
+}
+
+@keyframes dash {
+	0% {
+		stroke-dasharray: 1,200;
+		stroke-dashoffset: 0;
+	}
+	50% {
+		stroke-dasharray: 89,200;
+		stroke-dashoffset: -35;
+	}
+	100% {
+		stroke-dasharray: 89,200;
+		stroke-dashoffset: -124;
+	}
+}
+
+@-webkit-keyframes color {
+	0% {
+		stroke: #41acf0;
+	}
+	40% {
+		stroke: #41acf0;
+	}
+	66% {
+		stroke: #41acf0;
+	}
+	80%, 90% {
+		stroke: #41acf0;
+	}
+}
+
+@keyframes color {
+	0% {
+		stroke: #41acf0;
+	}
+	40% {
+		stroke: #41acf0;
+	}
+	66% {
+		stroke: #41acf0;
+	}
+	80%, 90% {
+		stroke: #41acf0;
+	}	
+}
