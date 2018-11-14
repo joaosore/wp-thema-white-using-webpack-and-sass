@@ -1,62 +1,9 @@
 
 // Components Styles like Carousel, etc..
-.owl-carousel {
-	&.owl-carousel-paletas,
-	&.carousel-aplicacoes-thumb {
-		.owl-nav {
-			position: absolute;
-			top: calc(50% - 28.5px);
-			width: 100%;
-			padding-right: 15px;
-			padding-left: 15px;
-			.owl-prev {
-				background-image: url('/wp-content/themes/equiplex/imgs/owl-seta.png');
-				width: 52px;
-				height: 52px;
-			    transform: rotateY(180deg);
-				outline: none;
-			    &:hover {
-			    	transform: rotateY(180deg) rotateX(180deg);
-			    }
-			    &.disabled {
-			    	background-image: url('/wp-content/themes/equiplex/imgs/owl-seta-disable.png');
-			    }
-			}
-			.owl-next {
-				background-image: url('/wp-content/themes/equiplex/imgs/owl-seta.png');
-				width: 52px;
-				height: 52px;
-				outline: none;
-			    float: right;
-			    &:hover {
-			    	transform: rotateX(180deg);
-			    }
-			    &.disabled {
-			    	background-image: url('/wp-content/themes/equiplex/imgs/owl-seta-disable.png');
-			    }
-			}
-		}
-		.owl-dots {
-		    margin-top: 15px;
-	        text-align: center;
-			.owl-dot {
-				width: 10px;
-				height: 10px;
-				background-color: #959595;
-				margin: 5px;
-				border-radius: 15px;
-				&.active {
-					background-color: #0B77BC;
-				}
-			}
-		}
-	}
-	&.carousel-aplicacoes-thumb {
-		.owl-nav {
-			padding: 0;
-		}
-	}
-}
+
+
+
+// Loading
 
 .profile-main-loader {
 	height: 50px;
@@ -94,7 +41,6 @@
 		}
 	}
 }
-
 
 @-webkit-keyframes rotate {
 	100% {

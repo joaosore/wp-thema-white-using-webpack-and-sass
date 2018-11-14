@@ -1,4 +1,4 @@
-<?phpx
+<?php
 
 add_action( 'wp_ajax_post_contato', 'filter_post_contato' );
 add_action( 'wp_ajax_nopriv_post_contato', 'filter_post_contato' );

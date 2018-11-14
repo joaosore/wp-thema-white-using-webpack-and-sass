@@ -1,7 +1,7 @@
 <?php 
 
-define('SITE_KEY', '6Le95HgUAAAAAIoaX6BwUrLRA4HY3SNg9rwbFnlB');
-define('SECRETE_KEY', '6Le95HgUAAAAAHqYWbriVZnHG7_dEQjIU2QR5CI5');
+define('SITE_KEY', '');
+define('SECRETE_KEY', '');
 
 function checkReCaptcha($form)
 {
