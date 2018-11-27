@@ -7,10 +7,6 @@
  * @package jd
  */
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
 if ( ! function_exists( 'jd_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.

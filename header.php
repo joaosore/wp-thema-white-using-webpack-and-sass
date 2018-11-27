@@ -26,9 +26,3 @@
 <!-- Google Tag Manager (noscript) -->
 
 <!-- End Google Tag Manager (noscript) -->
-
-<header>
-	<?php wp_nav_menu(); ?>
-</header>
-
-

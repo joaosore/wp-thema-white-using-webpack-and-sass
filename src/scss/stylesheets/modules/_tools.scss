@@ -37,3 +37,9 @@
 		padding-left: #{$i}px!important;
 	}
 }
+
+.h-70-m {
+	@media only screen and (max-width: $SM){
+		height: 70%!important;
+	}
+}

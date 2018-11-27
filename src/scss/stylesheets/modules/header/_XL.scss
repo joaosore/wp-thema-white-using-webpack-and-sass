@@ -1,0 +1,123 @@
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+    z-index: 5;
+    padding-top: 115px;
+    transition: all 350ms ease-out;
+    &.active-scroll {
+		padding-top: 0;
+	    .logo {
+	    	width: 181px;
+		    padding: 19.5px 24px;
+	    }
+	    .menu-menu-container {
+    		min-height: 79px;
+	    }
+	}
+    .logo {
+    	width: 205px;
+	    position: absolute;
+    	transition: all 350ms ease-out;
+    	object {
+	    	pointer-events: none;
+	    }
+    }
+    .menu-menu-container {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		transition: all 350ms ease-out;
+    	min-height: 75px;
+    	.menu {
+			margin: 0;
+			display: flex;
+		    justify-content: flex-end;
+			li {
+				padding: 0 32.5px;
+				position: relative;
+				text-align: center;
+				transition: all 350ms ease-out;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				&:hover {
+					a {
+						text-decoration: none;
+						color: #69B830;
+					}
+				}
+				a {
+					color: #FFF;
+					font-size: 1.125em;
+					font-weight: 700;
+				}
+			}
+			.menu-item-has-children {
+			    height: 37px;
+		        cursor: pointer;
+				.sub-menu {
+					padding: 0;
+					position: absolute;
+					width: 100%;
+					left: 0;
+					background-color: #FFF;
+				    overflow: hidden;
+				    max-height: 0;
+				    transition: all 350ms ease-out;
+				   	margin-top: 10px;
+			   	    top: 25px;
+				    &.active {
+				    	max-height: 250px;
+				    }
+					li {
+						padding: 15px 40px;
+					    justify-content: flex-start;
+						position: relative;
+						transition: all 350ms ease-out;
+						&:first-child {
+							padding-top: 25px;
+							&:before {
+								content: "";
+								position: absolute;
+								height: 10px;
+								display: block;
+								top: 0;
+								width: 100%;
+								left: 0;
+								background-color: #69B830;
+							}
+						}
+						&:last-child {
+							&:after {
+								display: none;
+							}
+						}
+						&:after {
+							content: "";
+							width: 100%;
+							height: 1px;
+							display: block;
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							background-color: #CECECE;
+						}
+						&:hover {
+							background-color: #8e8e8e;
+							a {
+								color: #FFF;
+								font-weight: 700;
+							}
+						}
+						a {
+							color: #8E8E8E;
+							font-weight: 400;
+						}
+					}
+				}
+			}
+    	}
+    }
+}
