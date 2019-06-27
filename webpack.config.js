@@ -8,13 +8,10 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
-	entry: [
-		'./src/js/index.js',
-		'./src/scss/index.scss'
-	],
+	entry: ['./src/config/transiction.js'],
 	output: {
 		path: path.resolve('dist'),
-		filename: './js/main.js'
+		filename: './main.js'
 	},
 	module: {
 		rules: [

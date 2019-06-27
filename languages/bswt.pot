@@ -38,8 +38,8 @@ msgstr ""
 #, php-format
 #@ _s
 msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgid "One comentário em &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comentários em &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 

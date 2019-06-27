@@ -71,6 +71,20 @@ function jd_setup() {
 endif;
 add_action( 'after_setup_theme', 'jd_setup' );
 
+/**
+ * Enqueue scripts and styles.
+ */
+function jd_scripts() {
+
+	wp_enqueue_style( 'main', get_template_directory_uri(). "/dist/main.css");
+    wp_enqueue_script( 'main', get_template_directory_uri() . '/dist/main.js', array(), '20180122', true );
+    wp_enqueue_script( 'reCaptcha', get_template_directory_uri() . 'https://www.google.com/recaptcha/api.js?render='.SITE_KEY, array(), '20180122', true );
+
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
+}
+add_action( 'wp_enqueue_scripts', 'jd_scripts' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -102,6 +116,13 @@ function jd_widgets_init() {
 }
 add_action( 'widgets_init', 'jd_widgets_init' );
 
+add_filter('comment_form_default_fields', 'remove_campos');
+
+function remove_campos($campos) {
+    $campos['url'] = '';
+    return $campos;
+}
+
 /**
  * Implement the Custom Header feature.
  */
@@ -127,4 +148,3 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 require get_template_directory() . '/controllers/include.php';
-require get_template_directory() . '/pages-inc/include.php';

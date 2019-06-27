@@ -11,15 +11,11 @@
 
 ?>
 
-<footer>
-
-</footer>
-
+</div>
 <?php wp_footer(); ?>
-<script src='https://www.google.com/recaptcha/api.js?render=<?php echo SITE_KEY; ?>'></script>
-<script type="text/javascript">
+
+<script defer type="text/javascript">
 	SITE_KEY = '<?php echo SITE_KEY; ?>';
 </script>
-<script src="<?php echo get_template_directory_uri(); ?>/dist/js/main.js" defer></script>
 </body>
 </html>
