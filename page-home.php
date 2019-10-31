@@ -12,7 +12,9 @@ get_header();
 ?>
 <div class="barba-container" data-namespace="pagehome">
 	<div id="body-class" <?php body_class(); ?>></div>
-	<?php get_page_jd('home'); ?>
+
+	PAGE HOME
+	
 </div>
 <?php 
 
