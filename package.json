@@ -39,7 +39,7 @@
     "jquery-mask-plugin": "^1.14.12",
     "jquery-validation": "^1.18.0",
     "lazyload": "^2.0.0-rc.2",
-    "lazysizes": "^5.0.0-rc1",
+    "lazysizes": "^5.2.1",
     "modernizr": "^3.5.0",
     "npm": "^6.4.1",
     "owl.carousel": "^2.3.4",
