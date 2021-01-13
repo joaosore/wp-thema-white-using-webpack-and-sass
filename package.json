@@ -37,7 +37,7 @@
     "jquery-countdown": "^2.2.0",
     "jquery-lazy": "^1.7.10",
     "jquery-mask-plugin": "^1.14.12",
-    "jquery-validation": "^1.18.0",
+    "jquery-validation": "^1.19.3",
     "lazyload": "^2.0.0-rc.2",
     "lazysizes": "^5.0.0-rc1",
     "modernizr": "^3.5.0",
